@@ -1,0 +1,61 @@
+# ============================
+# Python & Jupyter
+# ============================
+__pycache__/
+*.py[cod]
+*.so
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_convert/
+
+# ============================
+# Virtual environments
+# ============================
+.env
+.venv
+env/
+venv/
+ENV/
+*.env
+
+# ============================
+# Logs & system files
+# ============================
+*.log
+*.out
+*.err
+.DS_Store
+Thumbs.db
+
+# ============================
+# IDE/editor configs
+# ============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================
+# Build & packaging
+# ============================
+build/
+dist/
+*.bak
+*.tmp
+*.cache/
+*.pytest_cache/
+*.mypy_cache/
+
+
+# ============================
+# torch checkpoints
+# ============================
+*.pth

@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=jupyter-notebook
+#SBATCH --output=/home/emiled/Repos/e3_diffusion_for_molecules/script_outputs/jupyter_out_%j.log
+#SBATCH --error=/home/emiled/Repos/e3_diffusion_for_molecules/script_outputs/jupyter_err_%j.log
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=5
+#SBATCH --partition=gpuRTX
+#SBATCH --gpus=1
+#SBATCH --time 03:00:00
+
+
+
+# get tunneling info
+
+port=8888
+node=$(hostname -s)
+user=$(whoami)
+
+
+# run jupyter notebook
+jupyter-notebook --no-browser --port=${port} --ip=${node}
